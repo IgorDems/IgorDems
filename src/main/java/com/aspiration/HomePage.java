@@ -15,6 +15,7 @@ public class HomePage extends PageObject {
     WebElementFacade spandsave;
 
     public void navigateToProductPage(){
+        getDriver().get("https://www.aspiration.com/");
         waitForTextToAppear("You can change Climate Change");
         waitFor(spandsave).click();
 
